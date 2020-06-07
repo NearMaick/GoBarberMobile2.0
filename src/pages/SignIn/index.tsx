@@ -57,11 +57,7 @@ const SignIn: React.FC = () => {
 
               <Input name="password" icon="lock" placeholder="Senha" />
 
-              <Button
-                onPress={() => {
-                  formRef.current?.submitForm();
-                }}
-              >
+              <Button onPress={() => formRef.current?.submitForm()}>
                 Entrar
               </Button>
             </Form>
