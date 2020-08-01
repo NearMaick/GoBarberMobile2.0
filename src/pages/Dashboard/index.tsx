@@ -8,6 +8,7 @@ import api from '../../services/api';
 import {
   Container,
   Header,
+  HeaderButton,
   HeaderTitle,
   UserName,
   ProfileButton,
@@ -54,10 +55,12 @@ const Dashboard: React.FC = () => {
   return (
     <Container>
       <Header>
-        <HeaderTitle>
-          Bem vindo, {'\n'}
-          <UserName>{user.name}</UserName>
-        </HeaderTitle>
+        <HeaderButton onPress={signOut}>
+          <HeaderTitle>
+            Bem vindo, {'\n'}
+            <UserName>{user.name}</UserName>
+          </HeaderTitle>
+        </HeaderButton>
 
         <ProfileButton onPress={navigateToProfile}>
           <UserAvatar source={{ uri: user.avatar_url }} />

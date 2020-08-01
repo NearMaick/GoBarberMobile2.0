@@ -18,6 +18,8 @@ export const Header = styled.View`
   align-items: center;
 `;
 
+export const HeaderButton = styled.TouchableOpacity``;
+
 export const HeaderTitle = styled.Text`
   color: #f4ede8;
   font-size: 20px;
